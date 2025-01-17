@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"poppins" sans-serif ;
+    scroll-behavior: smooth;
+}
+html{
+    background-color: black;
+}
+#Calculator{
+    background-color: black;
+    width: 350px;
+    height: 550px ;
+    display: grid;
+    margin-top: 60px; 
+    border-radius: 30px; 
+    position: relative; 
+}
+
+@media (max-width: 768px){
+  #Calculator{
+    width: 100%;
+    height: 100hv;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  }
+.after1{
+    font-size: 30px !important;
+
+  }
+  .after2 {
+    font-size: 16px !important; /* Use !important to override */
+}
+.image-size1{
+    width: 20px;
+    height: 20px;
+   
+}
+.image-size2{
+    width: 12px ;
+    height: 12px;
+ padding-left: 1px;
+    padding-right: 1px;
+  }
+
+.display{
+    color:white;
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    border-radius: 30px;
+    display: grid;
+    position: relative;
+    
+    
+   
+}
+
+.display h1{
+    font-size: 55px;
+    position: relative;  
+    padding-left:86% ;
+    padding-top: 25%;
+    
+}
+svg{
+    width: 20px;
+    
+
+}
+.buttons{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 30px;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+
+}
+.btn{
+    border: none;
+    border-radius: 30px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    
+}
+.backspace{
+    width: 30px;
+    padding-top: 5px;
+    padding-right: 3px;
+}
+.cross{
+    padding-top: 6px;
+}
+.minus{
+font-size: 40px;
+padding-bottom: 10px;
+}
+
+
+.span{
+   grid-column: span 2;   
+}
+.orange{
+    background-color: orangered;
+}
+.grey{
+    background-color: grey;
+}
+
+.display h1 {
+    font-size: 55px;
+    text-align: right; /* Align text to the right */
+    padding: 20px; /* Add consistent padding */
+    overflow: hidden; /* Prevent overflow for long numbers */
+}
+
+.orange:hover {
+    background-color: #ff704d;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+.grey:hover{
+    background-color: rgb(182, 180, 180);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    #Calculator {
+        width: 100%;
+        height: 100vh; 
+        margin: 0;
+        border-radius: 0;
+    }
+}
+.multiply{
+    padding-top: 13px;
+}
+.point{
+    padding-bottom: 15px;
+    
+}
